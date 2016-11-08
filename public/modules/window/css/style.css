@@ -1,0 +1,75 @@
+.window {
+    position:relative;
+}
+
+.windowContainer {
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid rgba(100, 100, 100, .4);
+    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+    overflow: visible;
+    position: absolute;
+    top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 5000;
+    display: none;
+}
+
+.windowTitleBar {
+    border-radius: 4px 4px 0 0;
+    background-color: #f8f8f8;
+    padding: 0 10px 0 10px;
+    z-index: 1000;
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+    height: 36px;
+}
+
+.windowTitle {
+    font-weight: bold;
+    padding: 8px 10px 6px 10px;
+}
+
+.windowBody {
+    padding: 20px !important;
+    display: block;
+    background: white;
+    overflow-y: auto;
+    overflow-x: auto;
+    position: relative;
+}
+
+.windowFooter {
+    border-radius: 0 0 4px 4px;
+    background-color: #f8f8f8;
+    font-weight: bold;
+    padding: 0 10px 0 10px;
+    height: 36px;
+    height: 48px;
+    border-top: 1px solid #dddddd;
+    margin-top: -1px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    vertical-align: middle;
+}
+
+.dim {
+    height:100%;
+    width:100%;
+    position:fixed;
+    left:0;
+    top:0;
+    z-index: 2000 !important;
+    background-color:black;
+    filter: alpha(opacity=1);  internet explorer 
+    -khtml-opacity: 0.1;      /* khtml, old safari */
+      -moz-opacity: 0.1;      /* mozilla, netscape */
+           opacity: 0.1;      /* fx, safari, opera */
+    display: none;
+}

@@ -1,0 +1,94 @@
+#notification_li {
+    position:relative
+}
+
+#notificationContainer {
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid rgba(100, 100, 100, .4);
+    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+    overflow: visible;
+    position: absolute;
+    top: 20px;
+    right: 9px;
+    right: 0;
+    margin-top: 21px;
+    width: 400px;
+    z-index: 4000;
+    display: none;
+}
+
+/* Popup Arrow */
+#notificationContainer:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    color: transparent;
+    border: 10px solid black;
+    border-color: transparent transparent #aaa;
+    margin-top: -20px;
+    margin-left: calc(100% - 25px);
+}
+
+#notificationTitle:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    color: transparent;
+    border: 9px solid black;
+    border-color: transparent transparent #f8f8f8;
+    margin-top: -26px;
+    margin-left: calc(100% - 34px);
+}
+
+#notificationTitle {
+    border-radius: 4px 4px 0 0;
+    font-weight: bold;
+    padding: 8px 10px 6px 10px;
+    background-color: #f8f8f8;
+    z-index: 1000;
+    width: 398px;
+    border-bottom: 1px solid #dddddd;
+}
+
+#notificationsBody {
+    min-height: 0px;
+    max-height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+    overflow: auto;
+}
+
+#notificationFooter {
+    border-radius: 0 0 4px 4px;
+    background-color: #f8f8f8;
+    text-align: center;
+    font-weight: bold;
+    padding: 8px 10px 6px 10px;
+    border-top: 1px solid #dddddd;
+    margin-top: -1px;
+}
+
+#notificationsBody:first-child.widget-notification {
+    padding-top: -10px;
+}
+
+.widget-link {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px 10px 0px 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.widget-link:hover {
+    text-decoration: none;
+    color: inherit;
+    background: rgba(0, 0, 0, 0.02);
+    cursor: pointer;
+}

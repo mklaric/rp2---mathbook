@@ -1,0 +1,45 @@
+.staticPageEdit {
+    font-family: "Hack", "Courier New", Courier, monospace;
+    width: 100%;
+    border: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+}
+
+.iconpickerItems {
+    max-width: 100%;
+}
+
+.iconpickerItem {
+    height: 32px;
+    max-height: 32px;
+    width: 32px;
+    max-width: 32px;
+    border-radius: 1px;
+}
+
+.iconpickerItem:not(.iconpickerItemSelected):hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.iconpickerItem i {
+    line-height: 32px;
+    width: 32px;
+    position: relative;
+    font-size: 16px;
+    text-align: center;
+}
+
+.iconpickerItemSelected {
+    color: white;
+}
+
+.iconpickerItemSelected:hover {
+    cursor: pointer;
+}

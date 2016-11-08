@@ -1,0 +1,222 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 240px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 240px;
+    width: 0;
+    height: 100%;
+    margin-top: 0px;
+    margin-left: -240px;
+    overflow-y: hidden;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 240px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -240px;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0px;
+    width: 239px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #eeeeee;
+    white-space: nowrap;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    background: rgba(255,255,255,0.1);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 51px;
+    font-size: 18px;
+    line-height: 51px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    text-indent: 20px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    white-space: nowrap;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: rgba(255, 255, 255, 0.95);
+    background: none;
+}
+
+.sidebar-nav > hr {
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 240px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 240px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+@media(min-width:768px) {
+    .content-container {
+        overflow-y: scroll;
+        height: calc(100vh - 51px);
+        margin-top: -20px;
+    }
+}
+
+#menu-toggle:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.icon {
+    margin-left: -15px;
+    max-width: 40px;
+    width: 40px;
+    text-align: center;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    margin-left: -40px;
+}
+
+.sidebar-nav ul li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #eeeeee;
+    white-space: nowrap;
+}
+
+.sidebar-nav ul li a:hover {
+    text-decoration: none;
+    background: rgba(255,255,255,0.1);
+}
+
+.sidebar-nav ul li a:active,
+.sidebar-nav ul li a:focus {
+    text-decoration: none;
+}
+
+.sidebarLinkActive {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.sidebar-bottom {
+    /*position: absolute;*/
+    margin-top: auto;
+    /*margin-bottom: 0;*/
+    /*bottom: 0;*/
+}
+
+.sidebar-bottom > .sidebar-nav {
+    position: relative;
+}
+
+#editSidebarLinksActive {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.editSidebarLinksActive {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.sortable li {
+    -webkit-transition: box-shadow 0.8s ease, background-color 0.8s ease;
+    -moz-transition: box-shadow 0.8s ease, background-color 0.8s ease;
+    -o-transition: box-shadow 0.8s ease, background-color 0.8s ease;
+    transition: box-shadow 0.8s ease, background-color 0.8s ease;
+}
+
+.moveableLink {
+    -webkit-box-shadow:inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow:inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+    box-shadow:inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
+}
